@@ -1,0 +1,48 @@
+.cartao-calendario {
+    border-radius: 4px;
+    padding: .5rem;
+    text-align: center;
+    margin: .5rem 2.5rem;
+}
+
+.cartao-calendario.fronteiras {
+    background-color: var(--fronteiras-abertas);
+}
+
+.cartao-calendario.hopi-night {
+    background-color: var(--hopi-night);
+}
+
+.cartao-calendario.summer-pride {
+    background-color: var(--summer-pride);
+}
+
+.cartao-calendario.hora-do-horror {
+    background-color: var(--hora-do-horror);
+}
+
+.cartao-calendario__link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cartao-calendario__titulo {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 0 0 .8rem 0;
+}
+
+.cartao-calendario__texto {
+    font-size: 1.05rem;
+}
+
+.cartao-calendario__aviso {
+    padding: 3.5rem 1rem 2rem 1rem;
+}
+
+.calendario__aviso-item {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}

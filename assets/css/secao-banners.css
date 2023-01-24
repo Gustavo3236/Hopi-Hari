@@ -1,0 +1,10 @@
+.secao-banners {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin: 0 0 5rem 0;
+}
+
+.banner__imagem {
+    width: 100%;
+}

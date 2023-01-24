@@ -1,0 +1,58 @@
+.secao-carrossel {
+    position: relative;
+}
+
+.carrossel.slick-initialized.slick-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.slick-prev, button.slick-next {
+    position: absolute;
+    background-color: var(--black);
+    opacity: 0.65;
+    font-size: 0;
+    color: var(--white);
+    border-radius: 50%;
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    z-index: 1;
+}
+
+button.slick-prev::before {
+    content: "\2039";
+    font-size: 2rem;
+}
+
+button.slick-next::before {
+    content: "\203A";
+    font-size: 2rem;
+}
+
+button.slick-prev {
+    position: absolute;
+    left: 5%;
+}
+
+button.slick-next {
+    right: 5%;
+}
+
+.botao-scroll-down {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-scroll-down a {
+    position: absolute;
+    top: 91.5%;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.botao-scroll-down a i::before {
+    content: "\02C5";
+    font-size: 2.5rem;
+}
