@@ -85,3 +85,28 @@
     margin: 0.15rem 0;
     display: block;
 }
+
+@media screen and (min-width: 577px) {
+    .cabecalho {
+        padding: 2rem;
+    }
+
+    .cabecalho__container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr auto;
+    }
+
+    .cabecalho-logo__link {
+        justify-self: center;
+    }
+
+    .cabecalho__botao-menu {
+        justify-self: end;
+    }
+
+    .cabecalho__botao-logo {
+        width: 1.5rem;
+    }
+    
+}

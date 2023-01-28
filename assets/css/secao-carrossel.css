@@ -21,6 +21,12 @@ button.slick-prev, button.slick-next {
     z-index: 1;
 }
 
+button.slick-prev:hover, button.slick-next:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.25s all;
+}
+
 button.slick-prev::before {
     content: "\2039";
     font-size: 2rem;
@@ -46,6 +52,7 @@ button.slick-next {
 }
 
 .botao-scroll-down a {
+    align-self: flex-end;
     position: absolute;
     top: 91.5%;
     text-decoration: none;
@@ -55,4 +62,28 @@ button.slick-next {
 .botao-scroll-down a i::before {
     content: "\02C5";
     font-size: 2.5rem;
+}
+
+/* Desaparecer o carrossel desktop */
+.carrossel.carrossel-desktop.slick-initialized.slick-slider {
+    display: none;
+}
+
+@media screen and (min-width: 577px) {
+    /* Desaparecer o carrossel mobile */
+    .carrossel.carrossel-mobile.slick-initialized.slick-slider {
+        display: none;
+    }
+    /* Aparecer o carrossel desktop */
+    .carrossel.carrossel-desktop.slick-initialized.slick-slider {
+        display: flex;
+    }
+
+    .botao-scroll-down a {
+        position: absolute;
+        top: 90.5%;
+        text-decoration: none;
+        color: var(--white);
+    }
+
 }

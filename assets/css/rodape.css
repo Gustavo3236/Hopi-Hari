@@ -7,8 +7,18 @@
 }
 
 .rodape__imagem {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Desaparece a imagem do rodapé desktop */
+.rodape__imagem--desktop {
+    display: none;
+}
+
+.hopi-sa__lista {
+    padding: 0 1rem;
 }
 
 .hopi-sa__titulo {
@@ -16,7 +26,6 @@
     font-weight: 700;
     font-size: 1.5rem;
     text-transform: uppercase;
-
 }
 
 .hopi-sa__texto {
@@ -26,6 +35,10 @@
 
 .hopi-sa__texto b {
     font-weight: 700;
+}
+
+.central-de-vendas__lista {
+    padding: 0 1rem;
 }
 
 .central-de-vendas__titulo {
@@ -45,15 +58,93 @@
     text-decoration: none;
 }
 
+.comprar-agora__container {
+    margin: 4rem 0 3rem 0;
+}
+
 .comprar-agora__link {
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
     font-size: 1.3rem;
     text-transform: uppercase;
-    margin: 4rem 0 3rem 0;
 }
 
 .copy {
     margin: 0 0 5rem 0;
+}
+
+@media screen and (min-width: 577px) {
+    .rodape__imagem {
+        width: 100vw;
+        height: 135px;
+        object-fit: cover;
+    }
+
+    /* Desaparece a imagem do rodapé mobile */
+    .rodape__imagem--mobile {
+        display: none;
+    }
+    /* Aparece a imagem do rodape desktop */
+    .rodape__imagem--desktop {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .rodape {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container__imagem {
+        grid-column: 1/4;
+    }
+
+    .rodape__imagem {
+        height: 180px;
+    }
+
+    .hopi-sa__lista, .central-de-vendas__lista, .comprar-agora__container, .hopi-sa__titulo, .central-de-vendas__titulo {
+        margin: 0;
+        text-align: start;
+    }
+
+    .hopi-sa__lista {
+        justify-self: end;
+        padding: 0 0 0 4rem;
+    }
+
+    .central-de-vendas__lista {
+        justify-self: center;
+    }
+
+    .comprar-agora__container {
+        justify-self: start;
+    }
+    
+    .hopi-sa__titulo, .central-de-vendas__titulo, .comprar-agora__container {
+        padding: 5rem 0 1.5rem 0;
+    }
+
+    .comprar-agora__link:hover {
+        text-decoration: underline;
+    }
+
+    .copy {
+        padding: 2rem 0 0 0;
+        grid-column: 1/4;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .rodape__imagem {
+        height: 240px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .rodape__imagem {
+        height: 300px;
+    }
 }

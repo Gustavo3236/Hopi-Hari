@@ -1,3 +1,9 @@
+.secao-cartao-calendario {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
 .cartao-calendario {
     border-radius: 4px;
     padding: .5rem;

@@ -69,7 +69,7 @@
     </header>
     <main class="principal">
         <section class="secao-carrossel">
-            <div class="carrossel">
+            <div class="carrossel carrossel-mobile">
                 <img src="./assets/img/Carrossel-Mobile-(576x940-px)--Tikitos-Grátis-Janeiro-e-Fevereiro-de-2023 (1).jpg" alt="" class="carrossel__imagem">
                 <img src="./assets/img/institucionalMobile2023.jpg" alt="" class="carrossel__imagem">
                 <img src="./assets/img/Carrossel-Mobile-(576x940-px)--Kaminda-Boulevard.jpg" alt="" class="carrossel__imagem">
@@ -77,6 +77,15 @@
                 <img src="./assets/img/Carrossel-Mobile-576x940px_2023.png" alt="" class="carrossel__imagem">
                 <img src="./assets/img/Mob-institucionalnew.png" alt="" class="carrossel__imagem">
                 <img src="./assets/img/bilheteria-mobile5.png" alt="" class="carrossel__imagem">
+            </div>
+            <div class="carrossel carrossel-desktop">
+                <img src="./assets/img/Carrossel-Desktop-(1900x900-px)--Tikitos-Grátis-Janeiro-e-Fevereiro-2023.jpg" alt="" class="carrossel__imagem">
+                <img src="./assets/img/institucionalDesk2023.webp" alt="" class="carrossel__imagem">
+                <img src="./assets/img/Carrossel-Desktop-(1900x900-px)-Kaminda-Boilevard.webp" alt="" class="carrossel__imagem">
+                <img src="./assets/img/O-Teatro-Mágico-Carrossel-Desktop-(1900x900-px)-Kaminda-Boilevard.webp" alt="" class="carrossel__imagem">
+                <img src="./assets/img/Carrossel-Desktop-1900x900px_2023.webp" alt="" class="carrossel__imagem">
+                <img src="./assets/img/Desk-institucionalnew.webp" alt="" class="carrossel__imagem">
+                <img src="./assets/img/bilheteria-desk5.webp" alt="" class="carrossel__imagem">
             </div>
             <div class="botao-scroll-down">
                 <a href="#textocalendario" class="botao-scroll-down__link">
@@ -120,45 +129,58 @@
             </div>
         </section>
         <section class="secao-banners">
-            <a href="#" class="banner__link">
-                <img src="./assets/img/IG_KBBeatles.webp" alt="" class="banner__imagem">
-            </a>
-            <a href="#" class="banner__link">
-                <img src="./assets/img/hopiniver-2022.webp" alt="" class="banner__imagem">
-            </a>
-            <a href="#" class="banner__link">
-                <img src="./assets/img/vip_pass2021.webp" alt="" class="banner__imagem">
-            </a>
-            <a href="#" class="banner__link">
-                <img src="./assets/img/Gastronomia.webp" alt="" class="banner__imagem">
-            </a>
-            <a href="#" class="banner__link">
-                <img src="./assets/img/Localizacao.jpg" alt="" class="banner__imagem">
-            </a>
+            <div class="coluna-1">
+                <a href="#" class="banner__link banner__imagem-link--beatles">
+                    <img src="./assets/img/IG_KBBeatles.webp" alt="" class="banner__imagem">
+                </a>
+                <a href="#" class="banner__link banner__imagem-link--hopi-niver">
+                    <img src="./assets/img/hopiniver-2022.webp" alt="" class="banner__imagem">
+                </a>
+            </div>
+            <div class="coluna-2">
+                <a href="#" class="banner__link banner__imagem-link--vip-pass">
+                    <img src="./assets/img/vip_pass2021.webp" alt="" class="banner__imagem">
+                </a>
+                <a href="#" class="banner__link banner__imagem-link--gastronomia">
+                    <img src="./assets/img/Gastronomia.webp" alt="" class="banner__imagem">
+                </a>
+                <a href="#" class="banner__link banner__imagem-link--localizacao">
+                    <img src="./assets/img/Localizacao.jpg" alt="" class="banner__imagem">
+                </a>
+            </div>
         </section>
     </main>
     <footer class="rodape">
         <div class="container__imagem">
             <a href="#" class="rodape-imagem__link">
-                <img src="./assets/img/Rodapé-Cortado3.webp" alt="" class="rodape__imagem">
+                <img src="./assets/img/Rodapé-Cortado3.webp" alt="" class="rodape__imagem rodape__imagem--mobile">
+                <img src="./assets/img/RodapePC.webp" alt="" class="rodape__imagem rodape__imagem--desktop">
             </a>
         </div>
-        <h5 class="hopi-sa__titulo">Hopi Hari S/A</h5>
-        <p class="hopi-sa__texto">Rodovia dos Bandeirantes, km 72, Vinhedo (SP) - Brasil</p>
-        <p class="hopi-sa__texto">Alvará de Licença nº 8.729, válido por prazo indeterminado</p>
-        <p class="hopi-sa__texto">AVCB Corpo de Bombeiros nº 61.9679, válido até 05/01/2026.</p>
-        <p class="hopi-sa__texto">
-            <b>Dúvidas:</b>
-            <a href="#" target="_top"></a>
-            FALE@HOPIHARICORP.COM.BR ou (11) 4290-0333
-        </p>
-        <h6 class="central-de-vendas__titulo">Central De Vendas</h6>
-        <p class="central-de-vendas__texto">(11) 4210-4000</p>
-        <p class="central-de-vendas__texto"><a href="#" class="central-de-vendas__link">Compliance</a></p>
-        <p class="central-de-vendas__texto"><a href="#" class="central-de-vendas__link">Dúvidas Frequentes</a></p>
-        <a href="" class="comprar-agora__link">Comprar Agora</a>
-        <p class="copy">&copy; 2023 Copyright Hopi Hari S/A</p>
+        <ul class="hopi-sa__lista">
+            <li class="hopi-sa__titulo">Hopi Hari S/A</li>
+            <li class="hopi-sa__texto">Rodovia dos Bandeirantes, km 72, Vinhedo (SP) - Brasil</li>
+            <li class="hopi-sa__texto">Alvará de Licença nº 8.729, válido por prazo indeterminado</li>
+            <li class="hopi-sa__texto">AVCB Corpo de Bombeiros nº 61.9679, válido até 05/01/2026.</li>
+            <li class="hopi-sa__texto">
+                <b>Dúvidas:</b>
+                <a href="#" target="_top"></a>
+                FALE@HOPIHARICORP.COM.BR ou (11) 4290-0333
+            </li>
+        </ul>
 
+        <ul class="central-de-vendas__lista">
+            <li class="central-de-vendas__titulo">Central De Vendas</li>
+            <li class="central-de-vendas__texto">(11) 4210-4000</li>
+            <li class="central-de-vendas__texto"><a href="#" class="central-de-vendas__link">Compliance</a></li>
+            <li class="central-de-vendas__texto"><a href="#" class="central-de-vendas__link">Dúvidas Frequentes</a></li>
+        </ul>
+
+        <div class="comprar-agora__container">
+            <a href="#" class="comprar-agora__link">Comprar Agora</a>
+        </div>
+
+        <p class="copy">&copy; 2023 Copyright Hopi Hari S/A</p>
     </footer>
     <script src="./assets/js/datepicker.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
