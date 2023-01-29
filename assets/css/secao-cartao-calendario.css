@@ -33,6 +33,10 @@
     font-weight: 700;
 }
 
+.cartao-calendario__link:hover {
+    text-decoration: underline;
+}
+
 .cartao-calendario__titulo {
     font-size: 1.2rem;
     text-transform: uppercase;

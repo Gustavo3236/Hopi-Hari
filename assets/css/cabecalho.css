@@ -95,6 +95,7 @@
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 1fr auto;
+        padding: 1rem;
     }
 
     .cabecalho-logo__link {
@@ -109,4 +110,14 @@
         width: 1.5rem;
     }
     
+}
+
+@media screen and (min-width: 1020px) {
+    .cabecalho {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        padding: 0;
+    }
 }
