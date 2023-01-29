@@ -108,6 +108,23 @@
     .cabecalho__botao-logo {
         width: 1.5rem;
     }
+
+    .cabecalho {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .cabecalho__container {
+        padding: 1rem;
+    }
+
+    .menu {
+        border-top: 1px solid var(--gray);
+        background-color: rgba(0, 0, 0, 0);
+    }
     
 }
 
