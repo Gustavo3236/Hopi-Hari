@@ -19,3 +19,17 @@
         gap: 0.35rem 0;
     }
 }
+
+@media screen and (min-width: 1020px) {
+    .secao-banners {
+        margin: 0 2.25rem 5rem 2.25rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .secao-banners {
+        display: flex;
+        justify-content: center;
+    }
+
+}

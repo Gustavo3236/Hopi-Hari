@@ -38,7 +38,7 @@
 }
 
 .menu-lista__item, .menu-atracoes__item, .menu-mais__item {
-    padding: 0.5rem 0 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .menu-lista__link, .menu-atracoes__link, .menu-mais__link {
@@ -57,6 +57,10 @@
 .menu-lista__item:hover {
     background-color: var(--gray);
     border-radius: 5px;
+}
+
+.menu-destaque:hover {
+    background-color: transparent;
 }
 
 .menu-lista__botao--atracoes, .menu-lista__botao--eventos, .menu-lista__botao--mais {
@@ -141,8 +145,51 @@
         padding: 1rem;
     }
 
+    .cabecalho__botao-menu {
+        display: none;
+    }
+
     .menu {
         border-top: 1px solid var(--gray);
         background-color: rgba(0, 0, 0, 0);
+        display: block;
+    }
+
+    .menu-lista {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+    }
+
+    .menu-lista__item:nth-child(9) {
+        margin-right: 1rem;
+    }
+
+    .menu-atracoes, .menu-eventos, .menu-mais {
+        display: none;
+        background-color: var(--black);
+        opacity: 0.9;
+        border-radius: 5px;
+    }
+    
+    .menu-atracoes--ativo, .menu-eventos--ativo, .menu-mais--ativo {
+        margin: 0.15rem 0;
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .menu-lista {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding-right: 5rem;
+    }
+
+    .menu-lista__item:nth-child(9) {
+        margin-right: 3rem;
     }
 }

@@ -38,7 +38,6 @@ button.slick-next::before {
 }
 
 button.slick-prev {
-    position: absolute;
     left: 5%;
 }
 
